@@ -117,4 +117,8 @@ body {
          background-color: rgba(35, 4, 53, 0.5);
         }
     
-        
+    .inline {
+    display: inline-block;
+          }
+
+    
