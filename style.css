@@ -1,5 +1,5 @@
 body {
-    background-image: url(/images/black.jpg);
+    background-image: url(images/black.jpg);
     background-size: 130rem;
     background-repeat: no-repeat;
     }
@@ -16,7 +16,7 @@ body {
     font-family: 'EB Garamond', serif;
     font-size: 1.7rem;
     height: 17.8rem;
-    }
+        }
     
     nav ul li {
         list-style-type: none;
@@ -120,5 +120,74 @@ body {
     .inline {
     display: inline-block;
           }
+
+    .center {
+        text-align: center;
+        font-size: .5rem;
+        color: rgba(216, 166, 59, 0.692);
+        font-family: 'EB Garamond', serif;
+    }
+    
+     .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+         }
+
+    .menu-btn_burger {
+        width: 20px;
+        height: 6px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(62, 2, 97, .5);
+        transition: all .5s ease-in-out;
+    }
+
+    .menu-btn_burger::before,
+    .menu-btn_burger::after {
+      content: '';  
+      position: absolute;
+      width: 20px;
+        height: 6px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(62, 2, 97, .5);
+        transition: all .5s ease-in-out;
+    }
+
+    .menu-btn_burger::before {
+        transform: translateY(-11px)
+    }
+
+    .menu-btn_burger::after  {
+        transform: translateY(11px);
+    }
+
+    /* ANIMATION */
+    .menu-btn.open .menu-btn_burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .menu-btn.open .menu-btn_burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    .menu-btn.open .menu-btn_burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+    
+    .footer {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
 
     
