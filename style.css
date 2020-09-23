@@ -17,6 +17,23 @@ body {
     font-size: 1.7rem;
     height: 17.8rem;
         }
+
+    nav {
+        position: absolute;
+        right: 0;
+        background-color: rgba(35, 4, 53, 0.5);
+        font-family: 'EB Garamond', serif;
+        display: none;
+    }
+
+    #toggled-section.open {
+        display: block;
+    }
+
+    nav ul {
+    display: flex;
+    flex-direction: column;
+    }
     
     nav ul li {
         list-style-type: none;

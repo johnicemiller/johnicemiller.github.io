@@ -1,11 +1,12 @@
 const menuBtn = document.querySelector('.menu-btn');
-let menuOpen = false;
+const nav = document.querySelector('#toggled-section')
+let toggledSection = false;
 menuBtn.addEventListener('click', function () {
-        if (!menuOpen) {
-            menuBtn.classList.add('open');
-        menuOpen = true;
+        if (!toggledSection) {
+            nav.classList.add('open');
+            toggledSection = true;
 } else {
-    menuBtn.classList.remove('open');
-    menuOpen = false;
+    nav.classList.remove('open');
+    toggledSection = false;
 }
 });
