@@ -21,7 +21,7 @@ body {
     nav {
         position: absolute;
         right: 0;
-        background-color: rgba(35, 4, 53, 0.5);
+        background-color: rgb(206, 193, 193, .2);
         font-family: 'EB Garamond', serif;
         display: none;
     }
@@ -64,6 +64,14 @@ body {
     font-family:'EB Garamond', serif;
     color: whitesmoke;
     padding: 1rem;
+    }
+
+    .me2 {
+        font-size: 1.2rem;
+        text-align: center;
+        font-family:'EB Garamond', serif;
+        color: whitesmoke;
+        padding: 1rem;  
     }
     
     h2 {
@@ -206,5 +214,26 @@ body {
         font-weight: bold;
     }
 
+    .sidebar {
+        position: fixed;
+        width: 250px;
+        top: 85px;
+        left: 10px;
+        bottom: 0;
+        background: rgba(68, 67, 67, 0.9);
+        }
 
+    .sidebar a {
+        display: block;
+        padding: 10px 20px;
+        color: rgb(253, 252, 252);
+        text-decoration: none;
+        font-family: 'Barlow', sans-serif;
+        letter-spacing: 1px;
+            }
+
+    .sidebar a:hover {
+        margin-left: 20px;
+        transition: 0.4s;
+    }
     
